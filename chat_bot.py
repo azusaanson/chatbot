@@ -1,19 +1,19 @@
 """
-# train the model
-# - load the training data(json file)
-# - split it into x(pattern) and y(tags)
-# - translate x(pattern) to bag_of_words
-# - index y(tags)
-# - start training (deep learning)
-# - save the model
+train the model
+- load the training data(json file)
+- split it into x(pattern) and y(tags)
+- translate x(pattern) to bag_of_words
+- index y(tags)
+- start training (deep learning)
+- save the model
 
-# start chat bot
-# - get input from user
-# -- if input == "quit", quit chat bot; if input == "teach", start teaching; else do the following
-# - translate it to bag_of_words
-# - use the trained model (and fit the input) to predict y(tag)
-# -- try to use a saved model, else train a new one
-# - use the y(tag) to give response
+start chat bot
+- get input from user
+-- if input == "quit", quit chat bot; if input tag == "teach", start teaching; else do the following
+- translate it to bag_of_words
+- use the trained model (and fit the input) to predict y(tag)
+-- try to use a saved model, else train a new one
+- use the y(tag) to give response
 """
 import nltk
 import numpy as np
